@@ -1,5 +1,5 @@
 
-[if exp="typeof(global.打地鼠_object)=='undefined'"]
+[if exp="typeof(global.whack_a_mole_object)=='undefined'"]
 [iscript]
 class TimerButton extends Layer
 {
@@ -225,28 +225,28 @@ class HamsterPlugin extends KAGPlugin
   }
 }
 
-kag.addPlugin(global.打地鼠_object = new HamsterPlugin());
+kag.addPlugin(global.whack_a_mole_object = new HamsterPlugin());
 [endscript]
 [endif]
 
 [macro name=hamsterinit]
-[eval exp="打地鼠_object.init(mp)"]
+[eval exp="whack_a_mole_object.init(mp)"]
 [endmacro]
 
 [macro name=hamstershow]
-[eval exp="打地鼠_object.show()"]
+[eval exp="whack_a_mole_object.show()"]
 [endmacro]
 
 [macro name=hamsterstart]
-[eval exp="打地鼠_object.start()"]
+[eval exp="whack_a_mole_object.start()"]
 [endmacro]
 
 [macro name=hamsterstop]
-[eval exp="打地鼠_object.stop()"]
+[eval exp="whack_a_mole_object.stop()"]
 [endmacro]
 
 [macro name=hamsteruninit]
-[eval exp="打地鼠_object.uninit()"]
+[eval exp="whack_a_mole_object.uninit()"]
 [endmacro]
 
 [macro name=hamsterwait]
